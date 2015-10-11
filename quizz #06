@@ -1,0 +1,43 @@
+Quizz #06
+
+
+q1.cpp
+
+
+#include <iostream> // Juan de Dios Durán Hernández A01631134
+#include <math.h>
+using namespace std;
+long superpower (long a, long b){
+return pow(a,b);}
+int main (){
+  long a;
+  long b;
+  cout << "elevar un numero a otro numero" << endl;;
+  cout << "Introduce el primer numero= ";
+  cin >> a;
+  cout << "Introduce el segundo numero= ";
+  cin >>b;
+  cout << "total= " << superpower (a,b);
+  cout << endl;
+  return 0;
+}
+
+
+
+q2.cpp
+
+
+#include <iostream> //Juan de Dios Durán Hernández A01631134
+using namespace std;
+void stars (int x){
+for (int i=0; i<x; i++){
+cout <<"*";
+}
+}
+int main(){
+  int x;
+  cout << "introduce el numero de estrellas que quieres= ";
+  cin >> x;
+  stars (x);
+  return 0;
+}
