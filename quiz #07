@@ -23,3 +23,31 @@ if (x==1){
 else {
 cout << fibonacci(x);}
 return 0;}
+
+q2.cpp
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+void isPalindrome(string palindrome, int x){
+  string prueba;
+  while (x>0){
+    char letter = palindrome [x-1];
+    prueba = prueba + letter;
+  cout << letter;
+  x=x-1;}
+  if (palindrome == prueba){
+    cout << " = Es palindrome";
+  }
+  else {
+    cout << " = no es un palindrome";
+  }
+}
+int main(){
+cout << "Escribe una palabra" << endl;
+  string palindrome;
+  cin >>palindrome;
+  int x=palindrome.length();
+  isPalindrome(palindrome, x);
+return 0;
+}
