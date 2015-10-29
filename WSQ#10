@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+void promedio(vector <int> cuadr){
+  int x;
+  double y =0;
+  cout << "Escribe los valores que deseas calcular" << endl;
+  cout << "Escribe 0 cuando no desees seguir calculando números" << endl;
+  cin >> x;
+  while (x !=0){
+  cuadr.push_back(x);
+  cin >> x;}
+  double suma;
+  for (int i=0; i<cuadr.size(); i++){
+    suma = suma +cuadr[i];
+  }
+cout << "El total= ";
+cout << suma << endl;
+int z=cuadr.size();
+  y = (suma)/(z-1);
+cout << "El promedio= ";
+   cout << y << endl;
+double v;
+ z=cuadr.size()-1;
+ int i=0;
+while(i<z) {
+v= v + (cuadr[z]-y)*(cuadr[z]-y);
+i=i+1;
+  z=z-1;
+}
+v=v*2;
+int w=cuadr.size()-1;
+cout << "Desviacion estandar= ";
+  double d;
+d= sqrt(v/w);
+cout << d;}
+int main (){
+  vector <int> cuadr(1);
+  promedio(cuadr);
+return 0;
+}
